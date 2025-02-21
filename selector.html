@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+        Advanced Selectors
+    </title>
+    <style>
+        /* attribute selector */
+        input[type = text]{
+            border: 3px solid olive;
+        }
+        ul>li{
+            color: aqua;
+        }
+        h1+p{
+            color:mediumvioletred;
+            font-size:20px;
+        }
+        a:hover{
+                color:brown;
+                font-size:22px;
+        }
+        li:nth-child(3)
+        {
+            background-color:black;
+        }
+        li::before{
+            content:"🚀";
+        }
+        li::after{
+            content:"🚀"
+        }
+        p::first-letter{
+            font-size:200%;
+            color: green;
+        }
+        div:not(.div1){
+            color:darkgreen;
+        }
+        div:not(.div2){
+            color:orange;
+        }
+    </style>
+    </head>
+    <body>
+        <input type = text>
+        <ul>
+            <li>Moon mission</li>
+            <li>Sun</li>
+            <li>Mercury</li>
+            <li>Mars</li>
+        </ul>
+            <h1>About space</h1>
+            <p>Space is defined as an almost perfect vacuum, nearly void of matter and with extremely low pressure. It contains various forms of radiation, as well as particles of gas, dust, and other matter floating around.</p>
+            <p>The Moon is Earth's only natural satellite, orbiting at a distance of about 239,000 miles (385,000 kilometers). It is the fifth-largest satellite in our solar system, with a diameter of approximately 2,160 miles (3,475 kilometers).</p>
+            <a href = "#">Satelite</a>
+            <div class = "div1">Earth - Wikipedia
+                   Earth is the third planet from the Sun and the only astronomical object known to harbor life</div>
+            <div class = "div2">A satellite or an artificial satellite[a] is an object, typically a spacecraft, placed into orbit around a celestial body. They have a variety of uses, including communication relay, weather forecasting, navigation (GPS), broadcasting, scientific research, and Earth observation</div>
+        </body>
+</html>
